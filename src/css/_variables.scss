@@ -1,0 +1,32 @@
+//crear variables para los colores
+$brand1: #75B3CB;
+$brand1-pale: #CAF0FF;
+$brand1-pale2: #EBF9FF;
+$brand2: #EFA693;
+$brand2-pale: #FFDCD3;
+$brand2-pale2: #FFF6F3;
+$body: #444950;
+$titles: #444950;
+
+//variables para los tipos de fuente
+$maintextfontfamily: 'Abhaya Libre';
+$maintextbodyxs: 13px;
+$maintextbodymedium: 700;
+$h2desktopsize: 44px;
+$h2desktopweight: 700;
+
+//crear mixin para font family y size
+@mixin font($size, $family, $weight, $text-transform){
+    font-size: $size;
+    font-family: $family, serif;
+    font-weight: $weight;
+    text-transform: $text-transform;
+}
+
+//crear mixin para position
+@mixin position($position, $zindex, $top, $left){
+    position: $position;
+    z-index: $zindex;
+    top: $top;
+    left: $left;
+}

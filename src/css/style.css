@@ -1,0 +1,49 @@
+.top-message {
+  width: 100vw;
+  height: 32px;
+  background-color: #FFDCD3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-message p {
+  font-size: 13px;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #444950;
+}
+
+.header-container {
+  margin: 31px 216px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-container__greeting-message {
+  position: relative;
+}
+.header-container__greeting-message .pill {
+  background-color: #CAF0FF;
+  height: 24px;
+  width: 70px;
+  border-radius: 100px;
+  position: absolute;
+  z-index: -1;
+  top: 32px;
+  left: -24px;
+}
+.header-container__greeting-message h2 {
+  font-size: 44px;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
+  text-transform: none;
+  color: #444950;
+  max-width: 566px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style.css.map */
