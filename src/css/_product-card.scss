@@ -53,7 +53,13 @@
     justify-content: space-between;
     &__price{
       @include font(15px, $cardfontfamily, 500, none);
-      color: $titles;
+      &--before{
+        color: $gray-paragraph;
+        text-decoration: line-through;
+      }
+      &--after{
+        color: $titles;
+      }
     }
   }
 }

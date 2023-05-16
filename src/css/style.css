@@ -133,6 +133,12 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   text-transform: none;
+}
+.product-card__stars-price__price--before {
+  color: #939393;
+  text-decoration: line-through;
+}
+.product-card__stars-price__price--after {
   color: #444950;
 }
 

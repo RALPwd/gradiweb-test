@@ -55,8 +55,12 @@ const createHTML = (product) => {
             <span class="rating">(${meanRating})</span>
           </div>
           <div class="product-card__stars-price__price">
-            &euro;${product.prices.min.amount}
-            &euro;${product.prices.max.amount}
+            <span class="product-card__stars-price__price--before">
+              &euro;${product.prices.min.amount}
+            </span>
+            <span class="product-card__stars-price__price--after">
+              &euro;${product.prices.max.amount}
+            </span>
           </div>
         </div>
       </div>
