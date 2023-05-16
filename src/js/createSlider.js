@@ -1,6 +1,6 @@
 import { tns } from "../../node_modules/tiny-slider/src/tiny-slider";
 
-export default createSlider = () => {
+const createSlider = () => {
   tns({
   container: '.products-slider',
   items: 4,
@@ -9,3 +9,5 @@ export default createSlider = () => {
   controlsContainer: "#customize-controls",
 });
 }
+
+export default createSlider;
