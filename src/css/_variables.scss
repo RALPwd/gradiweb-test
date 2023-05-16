@@ -34,3 +34,14 @@ $cardfontfamily: 'Poppins', sans-serif;
     top: $top;
     left: $left;
 }
+
+//Botones
+
+button.secondary{
+    height: 48px;
+    background-color: $brand2;
+    color: $white;
+    @include font(14px, $cardfontfamily, 700, uppercase);
+    border: none;
+    border-radius: 100px;
+}

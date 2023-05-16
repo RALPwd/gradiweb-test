@@ -1,0 +1,114 @@
+footer{
+  width: 100vw;
+  height: 550px;
+  margin-top: 68px;
+  padding-top: 197px;
+  background-image: url('../assets/img/backfooter.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  h2{
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  .subscription-form{
+    margin-top: 50px;
+    &__text{
+      text-align: center;
+      @include font(15px, $cardfontfamily, 350, none);
+      color: $gray-paragraph;
+      max-width: 440px;
+      margin: 0 auto;
+    }
+    &__form{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 28px;
+      input{
+        width: 360px;
+        height: 48px;
+        border-radius: 100px;
+        border: 1px solid $brand2;
+        padding: 11px 24px;
+        @include font(15px, $cardfontfamily, 500, none);
+        color: $titles;
+        &::placeholder{
+          @include font(15px, $cardfontfamily, 500, none);
+          color: $gray-paragraph;
+        }
+        &:hover{
+          border: 1px solid #F39780;
+        }
+        &:focus{
+          border: 1px solid #008EFC;
+          outline: none;
+        }
+      }
+      button{
+        width: 119px;
+        margin-left: 3px;
+      }
+    }
+    &__success{
+      display: flex;
+      width: 482px;
+      justify-content: left;
+      margin: 0 auto;
+      margin-top: 6px;
+      img{
+        margin-left: 10px;
+      }
+      p{
+        color: $gray-paragraph;
+        @include font(14px, $cardfontfamily, 400, none);
+        margin-left: 8px;
+      }
+      &.hidden{
+        display: none;
+      }
+    }
+    &__error{
+      display: flex;
+      width: 482px;
+      justify-content: left;
+      margin: 0 auto;
+      margin-top: 6px;
+      img{
+        margin-left: 10px;
+      }
+      p{
+        color: #EB5757;
+        @include font(14px, $cardfontfamily, 400, none);
+        margin-left: 8px;
+      }
+      &.hidden{
+        display: none;
+      }
+    }
+  }
+  .pill{
+    position: absolute;
+    &.pill1{
+      top: 323px;
+      left: 73px;
+    }
+    &.pill3{
+      top: 347px;
+      right: 182.65px;
+    }
+    &.pill4{
+      top: 177px;
+      left: 304.65px;
+    }
+    &.pill6{
+      top: 149px;
+      right: 34.46px;
+    }
+    &.greenpill{
+      top: 147px;
+      left: 105px;
+    }
+  }
+}

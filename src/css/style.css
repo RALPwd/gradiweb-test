@@ -1,3 +1,15 @@
+button.secondary {
+  height: 48px;
+  background-color: #EFA693;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 100px;
+}
+
 .top-message {
   width: 100vw;
   height: 32px;
@@ -73,6 +85,16 @@
 .carousel {
   width: 95%;
   margin: 0 auto;
+}
+.carousel__button-container {
+  width: 100%;
+  margin-top: 91px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel__button-container__button {
+  width: 237px;
 }
 
 .product-card {
@@ -155,8 +177,155 @@
   color: #939393;
 }
 
+footer {
+  width: 100vw;
+  height: 550px;
+  margin-top: 68px;
+  padding-top: 197px;
+  background-image: url("../assets/img/backfooter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+footer h2 {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto;
+}
+footer .subscription-form {
+  margin-top: 50px;
+}
+footer .subscription-form__text {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 350;
+  text-transform: none;
+  color: #939393;
+  max-width: 440px;
+  margin: 0 auto;
+}
+footer .subscription-form__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 28px;
+}
+footer .subscription-form__form input {
+  width: 360px;
+  height: 48px;
+  border-radius: 100px;
+  border: 1px solid #EFA693;
+  padding: 11px 24px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  color: #444950;
+}
+footer .subscription-form__form input::-moz-placeholder {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  color: #939393;
+}
+footer .subscription-form__form input::placeholder {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  color: #939393;
+}
+footer .subscription-form__form input:hover {
+  border: 1px solid #F39780;
+}
+footer .subscription-form__form input:focus {
+  border: 1px solid #008EFC;
+  outline: none;
+}
+footer .subscription-form__form button {
+  width: 119px;
+  margin-left: 3px;
+}
+footer .subscription-form__success {
+  display: flex;
+  width: 482px;
+  justify-content: left;
+  margin: 0 auto;
+  margin-top: 6px;
+}
+footer .subscription-form__success img {
+  margin-left: 10px;
+}
+footer .subscription-form__success p {
+  color: #939393;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  margin-left: 8px;
+}
+footer .subscription-form__success.hidden {
+  display: none;
+}
+footer .subscription-form__error {
+  display: flex;
+  width: 482px;
+  justify-content: left;
+  margin: 0 auto;
+  margin-top: 6px;
+}
+footer .subscription-form__error img {
+  margin-left: 10px;
+}
+footer .subscription-form__error p {
+  color: #EB5757;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  margin-left: 8px;
+}
+footer .subscription-form__error.hidden {
+  display: none;
+}
+footer .pill {
+  position: absolute;
+}
+footer .pill.pill1 {
+  top: 323px;
+  left: 73px;
+}
+footer .pill.pill3 {
+  top: 347px;
+  right: 182.65px;
+}
+footer .pill.pill4 {
+  top: 177px;
+  left: 304.65px;
+}
+footer .pill.pill6 {
+  top: 149px;
+  right: 34.46px;
+}
+footer .pill.greenpill {
+  top: 147px;
+  left: 105px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: 700;
+  font-family: "Abhaya Libre", serif;
 }/*# sourceMappingURL=style.css.map */
