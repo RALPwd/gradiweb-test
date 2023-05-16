@@ -1,6 +1,6 @@
 import createSlider from "./createSlider";
 
-export default fetchProducts = async () => {
+const fetchProducts = async () => {
   try {
     const response = await fetch(
       "https://gradistore-spi.herokuapp.com/products/all"
@@ -52,3 +52,5 @@ export default fetchProducts = async () => {
     console.log("Error:", error.message);
   }
 };
+
+export default fetchProducts;
