@@ -1,8 +1,8 @@
 footer{
   width: 100vw;
-  height: 550px;
   margin-top: 68px;
   padding-top: 197px;
+  padding-bottom: 73px;
   background-image: url('../assets/img/backfooter.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,6 +11,8 @@ footer{
     text-align: center;
     max-width: 750px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
   }
   .subscription-form{
     margin-top: 50px;
@@ -20,12 +22,16 @@ footer{
       color: $gray-paragraph;
       max-width: 440px;
       margin: 0 auto;
+      position: relative;
+      z-index: 1;
     }
     &__form{
       display: flex;
       align-items: center;
       justify-content: center;
       margin-top: 28px;
+      position: relative;
+      z-index: 1;
       input{
         width: 360px;
         height: 48px;
@@ -109,6 +115,32 @@ footer{
     &.greenpill{
       top: 147px;
       left: 105px;
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 600px){
+  footer{
+    h2{
+      font-size: $h2mobilesize;
+      max-width: 328px;
+      padding-bottom: 63px;
+    }
+    .subscription-form{
+      &__text{
+        max-width: 335px;
+      }
+      &__form{
+        flex-direction: column;
+        input{
+          width: 328px;
+          margin-bottom: 16px;
+        }
+        button{
+          width: 199px;
+        }
+      }
     }
   }
 }

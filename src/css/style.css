@@ -82,6 +82,24 @@ button.secondary {
   filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.25));
 }
 
+@media (max-width: 800px) {
+  .header-container {
+    margin: 31px 50px;
+  }
+}
+@media (max-width: 600px) {
+  .header-container {
+    margin: 31px 33px;
+    flex-direction: column;
+  }
+  .header-container__greeting-message h2 {
+    font-size: 28px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    text-transform: none;
+    margin-bottom: 15px;
+  }
+}
 .carousel {
   width: 95%;
   margin: 0 auto;
@@ -177,11 +195,16 @@ button.secondary {
   color: #939393;
 }
 
+@media (max-width: 1200px) {
+  .product-card__stars-price {
+    flex-direction: column;
+  }
+}
 footer {
   width: 100vw;
-  height: 550px;
   margin-top: 68px;
   padding-top: 197px;
+  padding-bottom: 73px;
   background-image: url("../assets/img/backfooter.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -191,6 +214,8 @@ footer h2 {
   text-align: center;
   max-width: 750px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 footer .subscription-form {
   margin-top: 50px;
@@ -204,12 +229,16 @@ footer .subscription-form__text {
   color: #939393;
   max-width: 440px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 footer .subscription-form__form {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 28px;
+  position: relative;
+  z-index: 1;
 }
 footer .subscription-form__form input {
   width: 360px;
@@ -314,6 +343,26 @@ footer .pill.greenpill {
   left: 105px;
 }
 
+@media (max-width: 600px) {
+  footer h2 {
+    font-size: 28px;
+    max-width: 328px;
+    padding-bottom: 63px;
+  }
+  footer .subscription-form__text {
+    max-width: 335px;
+  }
+  footer .subscription-form__form {
+    flex-direction: column;
+  }
+  footer .subscription-form__form input {
+    width: 328px;
+    margin-bottom: 16px;
+  }
+  footer .subscription-form__form button {
+    width: 199px;
+  }
+}
 * {
   margin: 0;
   padding: 0;

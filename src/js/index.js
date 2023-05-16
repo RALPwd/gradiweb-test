@@ -1,6 +1,7 @@
 import createSlider from "./createSlider";
 import fetchProducts from "./fetchProducts";
 
+// Función para calcular el rating y generar el string de estrellas
 const calculateRating = (rating) => {
   const stars = Math.floor((rating + 100) / 100);
 
@@ -11,6 +12,8 @@ const calculateRating = (rating) => {
   }
 }
 
+
+// Función para generar el HTML de un producto
 const createHTML = (product) => {
   if(product) {
     console.log(product.tags)
@@ -70,7 +73,7 @@ const createHTML = (product) => {
   }
 }
 
-
+// Función para popular los productos
 const populateProducts = async () => {
   const products = await fetchProducts();
   const carousel = document.getElementById("carousel");

@@ -8,7 +8,7 @@ const fetchProducts = async () => {
     }
     const data = await response.json();
     const products =  data.products.nodes;
-    return products
+    return products // Devuelve los productos obtenidos desde la API
 
   } catch (error) {
     console.log("Error:", error.message);
