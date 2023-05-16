@@ -7,18 +7,20 @@ $brand2-pale: #FFDCD3;
 $brand2-pale2: #FFF6F3;
 $body: #444950;
 $titles: #444950;
+$white: #ffffff;
 
 //variables para los tipos de fuente
-$maintextfontfamily: 'Abhaya Libre';
+$maintextfontfamily: 'Abhaya Libre', serif;
 $maintextbodyxs: 13px;
 $maintextbodymedium: 700;
 $h2desktopsize: 44px;
 $h2desktopweight: 700;
+$cardfontfamily: 'Poppins', sans-serif;
 
 //crear mixin para font family y size
 @mixin font($size, $family, $weight, $text-transform){
     font-size: $size;
-    font-family: $family, serif;
+    font-family: $family;
     font-weight: $weight;
     text-transform: $text-transform;
 }

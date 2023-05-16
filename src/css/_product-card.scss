@@ -1,0 +1,61 @@
+.carousel{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.product-card{
+  width: 320px;
+  &__image-container{
+    position: relative;
+    cursor: pointer;
+    &--large{
+      position: relative;
+      cursor: pointer;
+      height: 398px;
+    }
+    &__image{
+      // position: absolute;
+      z-index: 0;
+      top: 0;
+    }
+    &__button-container{
+      position: absolute;
+      z-index: 1;
+      bottom: 13px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__button{
+        width: 297px;
+        height: 48px;
+        border-radius: 100px;
+        border: none;
+        background-color: $white;
+        color: $brand2;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        box-sizing: content-box;
+        &:hover{
+          border: 2px solid $white;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  &__title{
+    @include font(18px, $cardfontfamily, 500, none);
+    color: $titles;
+    margin-top: 18px;
+  }
+  &__stars-price{
+    display: flex;
+    justify-content: space-between;
+    &__price{
+      @include font(15px, $cardfontfamily, 500, none);
+      color: $titles;
+    }
+  }
+}
