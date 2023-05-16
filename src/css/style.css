@@ -76,7 +76,7 @@
 }
 
 .product-card {
-  width: 320px;
+  width: 100%;
 }
 .product-card__image-container {
   position: relative;
@@ -88,8 +88,7 @@
   height: 398px;
 }
 .product-card__image-container__image {
-  z-index: 0;
-  top: 0;
+  width: 100%;
 }
 .product-card__image-container__button-container {
   position: absolute;
@@ -101,7 +100,7 @@
   justify-content: center;
 }
 .product-card__image-container__button-container__button {
-  width: 297px;
+  width: 92%;
   height: 48px;
   border-radius: 100px;
   border: none;
@@ -135,6 +134,19 @@
   font-weight: 500;
   text-transform: none;
   color: #444950;
+}
+
+.stars {
+  color: #FFC658;
+  font-size: 17px;
+}
+
+.rating {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  color: #939393;
 }
 
 * {

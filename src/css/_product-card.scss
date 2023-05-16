@@ -4,7 +4,7 @@
 }
 
 .product-card{
-  width: 320px;
+  width: 100%;
   &__image-container{
     position: relative;
     cursor: pointer;
@@ -14,9 +14,7 @@
       height: 398px;
     }
     &__image{
-      // position: absolute;
-      z-index: 0;
-      top: 0;
+      width: 100%;
     }
     &__button-container{
       position: absolute;
@@ -27,7 +25,7 @@
       align-items: center;
       justify-content: center;
       &__button{
-        width: 297px;
+        width: 92%;
         height: 48px;
         border-radius: 100px;
         border: none;
@@ -58,4 +56,14 @@
       color: $titles;
     }
   }
+}
+
+.stars{
+  color: $brand5;
+  font-size: 17px;
+}
+
+.rating{
+  @include font(14px, $cardfontfamily, 400, none);
+  color: $gray-paragraph;
 }

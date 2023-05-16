@@ -7,6 +7,7 @@ const createSlider = () => {
   slideBy: 2,
   autoplay: false,
   controlsContainer: "#customize-controls",
+  gutter: 16,
 });
 }
 
